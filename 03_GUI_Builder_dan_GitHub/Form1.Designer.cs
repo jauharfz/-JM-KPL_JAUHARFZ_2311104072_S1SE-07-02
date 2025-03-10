@@ -38,7 +38,7 @@ partial class Form1
         One = new System.Windows.Forms.Button();
         Two = new System.Windows.Forms.Button();
         Three = new System.Windows.Forms.Button();
-        textBox1 = new System.Windows.Forms.TextBox();
+        resultBox = new System.Windows.Forms.TextBox();
         Nine = new System.Windows.Forms.Button();
         Eight = new System.Windows.Forms.Button();
         Seven = new System.Windows.Forms.Button();
@@ -52,7 +52,9 @@ partial class Form1
         Zero.Size = new System.Drawing.Size(87, 76);
         Zero.TabIndex = 4;
         Zero.Text = "0";
-        Zero.UseVisualStyleBackColor = true;// 
+        Zero.UseVisualStyleBackColor = true;
+        Zero.Click += AngkaButton_Click;
+        // 
         // Four
         // 
         Four.Font = new System.Drawing.Font("D-DIN", 19.799997F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
@@ -62,6 +64,7 @@ partial class Form1
         Four.TabIndex = 0;
         Four.Text = "4";
         Four.UseVisualStyleBackColor = true;
+        Four.Click += AngkaButton_Click;
         // 
         // Five
         // 
@@ -72,6 +75,7 @@ partial class Form1
         Five.TabIndex = 1;
         Five.Text = "5";
         Five.UseVisualStyleBackColor = true;
+        Five.Click += AngkaButton_Click;
         // 
         // Six
         // 
@@ -82,6 +86,7 @@ partial class Form1
         Six.TabIndex = 2;
         Six.Text = "6";
         Six.UseVisualStyleBackColor = true;
+        Six.Click += AngkaButton_Click;
         // 
         // Add
         // 
@@ -92,7 +97,7 @@ partial class Form1
         Add.TabIndex = 3;
         Add.Text = "+";
         Add.UseVisualStyleBackColor = true;
-        
+        Add.Click += Add_Click;
         // 
         // Results
         // 
@@ -103,6 +108,7 @@ partial class Form1
         Results.TabIndex = 5;
         Results.Text = "=";
         Results.UseVisualStyleBackColor = true;
+        Results.Click += Results_Click;
         // 
         // One
         // 
@@ -113,6 +119,7 @@ partial class Form1
         One.TabIndex = 6;
         One.Text = "1";
         One.UseVisualStyleBackColor = true;
+        One.Click += AngkaButton_Click;
         // 
         // Two
         // 
@@ -123,6 +130,7 @@ partial class Form1
         Two.TabIndex = 7;
         Two.Text = "2";
         Two.UseVisualStyleBackColor = true;
+        Two.Click += AngkaButton_Click;
         // 
         // Three
         // 
@@ -133,14 +141,16 @@ partial class Form1
         Three.TabIndex = 8;
         Three.Text = "3";
         Three.UseVisualStyleBackColor = true;
+        Three.Click += AngkaButton_Click;
         // 
-        // textBox1
+        // resultBox
         // 
-        textBox1.Location = new System.Drawing.Point(264, 33);
-        textBox1.Multiline = true;
-        textBox1.Name = "textBox1";
-        textBox1.Size = new System.Drawing.Size(273, 53);
-        textBox1.TabIndex = 10;
+        resultBox.Font = new System.Drawing.Font("D-DIN", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        resultBox.Location = new System.Drawing.Point(264, 33);
+        resultBox.Multiline = true;
+        resultBox.Name = "resultBox";
+        resultBox.Size = new System.Drawing.Size(273, 53);
+        resultBox.TabIndex = 10;
         // 
         // Nine
         // 
@@ -151,6 +161,7 @@ partial class Form1
         Nine.TabIndex = 13;
         Nine.Text = "9";
         Nine.UseVisualStyleBackColor = true;
+        Nine.Click += AngkaButton_Click;
         // 
         // Eight
         // 
@@ -161,6 +172,7 @@ partial class Form1
         Eight.TabIndex = 12;
         Eight.Text = "8";
         Eight.UseVisualStyleBackColor = true;
+        Eight.Click += AngkaButton_Click;
         // 
         // Seven
         // 
@@ -171,6 +183,7 @@ partial class Form1
         Seven.TabIndex = 11;
         Seven.Text = "7";
         Seven.UseVisualStyleBackColor = true;
+        Seven.Click += AngkaButton_Click;
         // 
         // Form1
         // 
@@ -180,7 +193,7 @@ partial class Form1
         Controls.Add(Nine);
         Controls.Add(Eight);
         Controls.Add(Seven);
-        Controls.Add(textBox1);
+        Controls.Add(resultBox);
         Controls.Add(Three);
         Controls.Add(Two);
         Controls.Add(One);
@@ -208,7 +221,7 @@ partial class Form1
     private System.Windows.Forms.Button One;
     private System.Windows.Forms.Button Two;
     private System.Windows.Forms.Button Three;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox resultBox;
 
     #endregion
 }
