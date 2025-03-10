@@ -2,7 +2,6 @@
 
 public class FruitCodes
 {
-    //bikin dictionary, dengan key dan value string
     private Dictionary<string, string> _fruitTable = new Dictionary<string, string>()
     {
         {"Apel", "A00"},
@@ -20,7 +19,6 @@ public class FruitCodes
         {"Melon", "N00"},
         {"Semangka", "O00"}
     };
-    //getternya jgn lupa
     public string GetFruitCode(string fruitName)
     {
         if (_fruitTable.ContainsKey(fruitName))
