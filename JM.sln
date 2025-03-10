@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Pengenalan_IDE_dan_Pemrograman_CSharp", "02_Pengenalan_IDE_dan_Pemrograman_CSharp\02_Pengenalan_IDE_dan_Pemrograman_CSharp.csproj", "{B565D7E8-4645-4468-8F98-042062C9DAD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_GUI_Builder_dan_GitHub", "03_GUI_Builder_dan_GitHub\03_GUI_Builder_dan_GitHub.csproj", "{F24EB580-17F9-4AB9-8189-B449EF6E517D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B565D7E8-4645-4468-8F98-042062C9DAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B565D7E8-4645-4468-8F98-042062C9DAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B565D7E8-4645-4468-8F98-042062C9DAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24EB580-17F9-4AB9-8189-B449EF6E517D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24EB580-17F9-4AB9-8189-B449EF6E517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24EB580-17F9-4AB9-8189-B449EF6E517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24EB580-17F9-4AB9-8189-B449EF6E517D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
